@@ -1,76 +1,51 @@
-# MNIST Neural Network from Scratch (NumPy)
+# Neural Network from Scratch (NumPy)
 
 ## Overview
 
-This project implements a **basic neural network from scratch using Python and NumPy** to classify handwritten digits from the MNIST dataset.
+This assignment involved building a **basic neural network from scratch using Python and NumPy** to understand the fundamental components of neural networks and how they learn.
 
-The objective of the project is to understand the **core components of neural networks** by manually implementing the main learning steps rather than relying on high-level deep learning frameworks.
-
----
-
-## Project Goals
-
-- Understand how neural networks learn  
-- Implement forward and backward propagation  
-- Train a model to classify image data  
-- Evaluate classification accuracy  
+The objective was to implement the key steps of a neural network manually, focusing on the mathematical operations that drive learning rather than using high-level deep learning frameworks.
 
 ---
 
-## Dataset
+## Key Components Implemented
 
-The MNIST dataset contains:
+### Loading the Dataset
+Loaded and preprocessed the dataset by separating **input features** and **target labels** used for training the model.
 
-- **70,000 grayscale images**
-- Image size: **28 × 28 pixels**
-- **10 classes (digits 0–9)**
+### Model Architecture
+Defined the structure of the neural network, including:
+- Input layer (based on number of features)
+- Hidden layer(s)
+- Output layer for predictions
 
-Each image is flattened into a feature vector and used as input for the neural network.
+### Weight Initialization
+Initialized weights and biases for all layers to start the training process.
 
----
+### Forward Propagation
+Implemented forward propagation to compute predictions by passing inputs through the network using activation functions.
 
-## Neural Network Implementation
+### Backpropagation
+Calculated gradients of the loss function and updated weights to reduce prediction error.
 
-The neural network was built **from scratch using NumPy**, including:
-
-- Weight initialization  
-- Forward propagation  
-- Activation functions (**ReLU / Softmax**)  
-- Loss calculation (**Cross-entropy**)  
-- Backpropagation  
-- Gradient updates using **gradient descent**
-
-This implementation illustrates how **data flows through a neural network and how parameters are updated during training**.
+### Training
+Trained the model over multiple **epochs**, applying forward and backward propagation while monitoring the loss to evaluate model learning.
 
 ---
 
-## Tools and Libraries
+## Tools Used
 
-- **Python**
-- **NumPy**
-- **Matplotlib** (visualization)
-- **Jupyter Notebook**
-
----
-
-## Results
-
-The model successfully learns to classify handwritten digits from the MNIST dataset and demonstrates the effectiveness of **basic neural network architectures for image classification tasks**.
+- Python  
+- NumPy  
+- Jupyter Notebook
 
 ---
 
-## Learning Outcome
+## Learning Outcomes
 
-This project helped build a strong understanding of:
+This assignment strengthened my understanding of:
 
 - Neural network fundamentals  
-- Matrix operations in deep learning  
+- Matrix operations in machine learning  
 - Gradient-based optimization  
-- Image classification workflows  
-
----
-
-## Author
-
-**Alex Mutua**  
-MSc Mathematical Sciences (Big Data)
+- How forward and backward propagation work in neural networks
